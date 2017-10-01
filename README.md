@@ -1,9 +1,9 @@
-Blockrain.js
+锘緽lockrain.js
 ============
 
 A tetris game in HTML5 + Javascript (with autoplay!)
 
-直接做成成品好吧...
+鐩存帴鍋氭垚鎴愬搧濂藉惂...
 
 **[Check out the demo](http://aerolab.github.io/blockrain.js/)**
 
