@@ -29,11 +29,11 @@
       asdwKeys: true, // Enable ASDW keys
 
       // Copy
-      playText: 'Let\'s play some Tetris',
-      playButtonText: 'Play',
-      gameOverText: 'Game Over',
-      restartButtonText: 'Play Again',
-      scoreText: 'Score',
+      playText: '来玩Tetris',
+      playButtonText: '开始',
+      gameOverText: '你挂了',
+      restartButtonText: '重新游戏',
+      scoreText: '得分',
 
       // Basic Callbacks
       onStart: function(){},
@@ -768,13 +768,13 @@
             this.next = null;
             if (_set_next_only) return null;
             shape = func(game._filled, game._checkCollisions, game._BLOCK_WIDTH, game._BLOCK_HEIGHT, info.mode);
-            if (!shape) throw new Error('No shape returned from shape function!', func);
+            if (!shape) throw new Error('Shape function制造不出shape捏!', func);
             shape.init();
             result = shape;
           }
           else {
             shape = func(game._filled, game._checkCollisions, game._BLOCK_WIDTH, game._BLOCK_HEIGHT, info.mode);
-            if (!shape) throw new Error('No shape returned from shape function!', func);
+            if (!shape) throw new Error('Shape function制造不出shape捏!', func);
             shape.init();
             this.next = shape;
             if (_set_next_only) return null;

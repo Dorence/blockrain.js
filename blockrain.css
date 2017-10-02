@@ -119,7 +119,29 @@
   bottom: -8px;
   right: -8px;
 }
-
+.button-c {
+  position: relative;
+  bottom: -8px;
+  float: left;
+  background: round;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #aeaeae;
+  padding: 1px 5px;
+}
+.button-d {
+  position: relative;
+  bottom: -8px;
+  display: inline-block;
+  background: rgba(0,0,0,0.1);
+  text-decoration: none;
+  border: 2px solid #00000;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: Consolas;
+  text-align: center;
+  cursor: default;
+}
 
 /* Score */
 .blockrain-score-holder {
@@ -145,7 +167,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-
   background: rgba(0,0,0,0.8);
   text-align: center;
 }

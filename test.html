@@ -4,15 +4,51 @@
 <meta charset="utf-8">
 <title>test</title>
 <script src="assets/jquery-3.2.1.min.js"></script>
-<script src="blockrain.jquery.min.js"></script>
+<script src="blockrain.jquery.js"></script>
 <link href="blockrain.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<h1>Test game</h1>
-<div class="game" style="width:250px; height:500px; border: thick"></div>
+<div id="container">
+	<h2>Test Game</h2>
+	<div class="game" style="width: 300px ;height: 500px"></div>
+	<div class="key">
+	<button class="button-c key-left"><img src="assets/images/arrow-left.png"/></button>
+	<button class="button-c key-right"><img src="assets/images/arrow-right.png"/></button>
+	<button class="button-c key-up"><img src="assets/images/arrow-rr.png"/></button>
+	<button class="button-c key-down"><img src="assets/images/arrow-down.png"/></button>
+	</div>
+	<br><br>
+	<div>
+	<button class="button-d" onClick="$('.game').blockrain('pause')">Pause</button>
+	<button class="button-d" onClick="$('.game').blockrain('resume')">Resume</button>
+	</div>
+</div>
+
 <script type="text/javascript">
-    $(".game").blockrain();
+$(document).ready(function(){
+	$('.game').blockrain();
+	$('.key-left').on('click', function(){
+	var e = jQuery.Event("keydown");e.keyCode = 37;$('.key-left').trigger(e);
+	var e = jQuery.Event("keyup");e.keyCode = 37;$('.key-left').trigger(e);
+	console.info("left key");
+	});
+	$('.key-up').on('click', function(){
+	var e = jQuery.Event("keydown");e.keyCode = 38;$('.key-up').trigger(e);
+	var e = jQuery.Event("keyup");e.keyCode = 38;$('.key-up').trigger(e);
+	console.info("up key");
+	});
+	$('.key-right').on('click', function(){
+	var e = jQuery.Event("keydown");e.keyCode = 39;$('.key-right').trigger(e);
+	var e = jQuery.Event("keyup");e.keyCode = 39;$('.key-right').trigger(e);
+	console.info("right key");
+	});
+	$('.key-down').on('click', function(){
+	var e = jQuery.Event("keydown");e.keyCode = 40;$('.key-down').trigger(e);
+	var e = jQuery.Event("keyup");e.keyCode = 40;$('.key-down').trigger(e);
+	console.info("down key");
+	});
+});
 </script>
 </body>
 </html>

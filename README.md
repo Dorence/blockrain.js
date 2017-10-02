@@ -3,7 +3,9 @@
 
 A tetris game in HTML5 + Javascript (with autoplay!)
 
-直接做成成品好吧...
+直接做成成品好吧...[Demo : test.html]
+
+而且改了里面的一些字，算是汉化?直接改的js,所以中文不用.min.js那个...
 
 **[Check out the demo](http://aerolab.github.io/blockrain.js/)**
 
